@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:descendantFocusability="beforeDescendants"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <Button
+            android:id="@+id/face_capture"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Face Capture" />
+
+        <Button
+            android:id="@+id/instructed_face_capture"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Instructed Face Capture" />
+
+        <Button
+            android:id="@+id/face_capture_simple"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Face Capture Simple" />
+
+        <Button
+            android:id="@+id/facedetector"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="FaceDetector" />
+
+        <Button
+            android:id="@+id/verification"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Verification" />
+
+        <Button
+            android:id="@+id/liveness_check_moving_transition"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Liveness Check - moving transition" />
+
+        <Button
+            android:id="@+id/liveness_check_fading_transition"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Liveness Check - fading transition" />
+
+        <Button
+            android:id="@+id/liveness_check_2_moving_transition"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Liveness Check 2 - moving transition" />
+
+        <Button
+            android:id="@+id/document_capture"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Document Capture" />
+
+        <Button
+            android:id="@+id/document_review"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Document Review" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="16dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="App Server Use Cases:"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Title" />
+
+        <EditText
+            android:id="@+id/app_server_url"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="App Server URL"
+            android:text="https://dot.innovatrics.com/appserver/"
+            android:textAlignment="center" />
+
+        <EditText
+            android:id="@+id/user_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="User ID"
+            android:textAlignment="center" />
+
+        <Button
+            android:id="@+id/onboarding"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:enabled="false"
+            android:text="Onboarding" />
+
+        <Button
+            android:id="@+id/sign_in"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:enabled="false"
+            android:text="Sign In" />
+
+        <TextView
+            android:id="@+id/result_data"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:id="@+id/photo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true" />
+
+        <ImageView
+            android:id="@+id/document_face"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true" />
+
+        <ImageView
+            android:id="@+id/document_front"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true" />
+
+        <ImageView
+            android:id="@+id/document_back"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true" />
+
+    </LinearLayout>
+
+</ScrollView>

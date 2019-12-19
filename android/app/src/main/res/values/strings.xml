@@ -1,0 +1,65 @@
+<resources>
+
+    <!-- Common -->
+    <string name="app_name">DOT Android Kit Sample</string>
+    <string name="processing">Processing&#8230;</string>
+    <string name="error_title">Error</string>
+    <string name="button_cancel">Cancel</string>
+    <string name="button_try_again">Try again</string>
+
+    <!-- Face Capture -->
+    <string name="face_capture_instruction_step_position_text">Center your face into the circle</string>
+    <string name="face_capture_instruction_step_light_text">Rotate face towards light source</string>
+    <string name="face_capture_instruction_step_done_text">That\'s it!</string>
+    <string name="face_capture_verify_photo_title">Verify resulting photo</string>
+    <string name="face_capture_button_try_again">Try again</string>
+    <string name="face_capture_button_confirm">Confirm</string>
+
+    <!-- Document Capture -->
+    <string name="document_capture_type_front">Front Side</string>
+    <string name="document_capture_type_back">Back Side</string>
+    <string name="document_capture_instruction_front">Take a picture of front side</string>
+    <string name="document_capture_instruction_back">Take a picture of back side</string>
+    <string name="document_capture_photo_captured_dimensions">Photo captured, dimensions %1$dx%2$d</string>
+
+    <!-- Document Review -->
+    <plurals name="document_review_info_bar_uncertain_items">
+        <item quantity="one">%d uncertain item</item>
+        <item quantity="other">%d uncertain items</item>
+    </plurals>
+    <string name="document_review_info_bar_ok">All items recognized</string>
+    <string name="document_review_title">Please verify all the data.</string>
+    <string name="document_review_subtitle_uncertain_items">Uncertain items require special attention.</string>
+    <string name="document_review_subtitle_ok">All items were recognized successfully.</string>
+    <string name="document_review_category_visual_inspection_zone">Visual Inspection Zone</string>
+    <string name="document_review_category_machine_readable_zone">Machine Readable Zone (readonly)</string>
+    <string name="document_review_button_confirm">All correct</string>
+
+    <!-- Onboarding -->
+    <string name="onboarding_instruction_step_scan_document_title">Scan your document</string>
+    <string name="onboarding_instruction_step_scan_document_text">Take a picture of both sides of your document</string>
+    <string name="onboarding_instruction_step_take_photo_title">Take a selfie</string>
+    <string name="onboarding_instruction_step_take_photo_text">Take a picture of your face to verify</string>
+    <string name="onboarding_error_server_error">Server error.</string>
+    <string name="onboarding_error_invalid_request_body">Invalid request body.</string>
+    <string name="onboarding_error_user_already_exists">User already exists.</string>
+    <string name="onboarding_error_invalid_bearer_token">Invalid bearer token.</string>
+    <string name="onboarding_error_fields_do_not_match">Fields do not match.</string>
+    <string name="onboarding_error_no_photo_upload_yet">No photo upload yet.</string>
+    <string name="onboarding_error_no_document_upload_yet">No document upload yet.</string>
+    <string name="onboarding_error_not_same_person">Not same person.</string>
+    <string name="onboarding_error_invalid_userid">Invalid user ID.</string>
+    <string name="onboarding_error_invalid_prediction">Invalid prediction.</string>
+    <string name="onboarding_error_unexpected_error">Unexpected error.</string>
+    <string name="onboarding_error_no_face_detected">No face detected.</string>
+    <string name="onboarding_error_probe_image_no_face_detected">No face detected on probe image.</string>
+    <string name="onboarding_error_reference_image_no_face_detected">No face detected on reference image.</string>
+    <string name="onboarding_error_multiple_faces_detected">Multiple faces detected.</string>
+    <string name="onboarding_error_incompatible_templates">Incompatible templates.</string>
+    <string name="onboarding_error_not_enough_data">Not enough data.</string>
+    <string name="onboarding_error_document_not_recognized">Document not recognized.</string>
+    <string name="onboarding_error_image_decode_failed">Image decode failed.</string>
+    <string name="onboarding_error_document_duplicate_front">Duplicate front side.</string>
+    <string name="onboarding_error_document_duplicate_back">Duplicate back side.</string>
+
+</resources>
