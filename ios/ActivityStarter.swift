@@ -34,7 +34,7 @@ class ActivityStarter: NSObject {
       self.strongDelegate = DVCDelegate()
       self.strongDelegate?.handler = { photo in
         dvc.dismiss(animated: true, completion: nil)
-        resolve(photo.jpegData(compressionQuality: 1.0)?.base64EncodedString())
+        resolve(photo.pngData()?.base64EncodedString())
       }
       dvc.delegate = self.strongDelegate
       rootVC?.present(dvc, animated: false, completion: nil)
