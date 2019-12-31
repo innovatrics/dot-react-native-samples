@@ -19,6 +19,7 @@
 		3E86C13661BF9D47B0BE18D6 /* libPods-DotReactNative-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D1F39D4393DAA308D102FF2 /* libPods-DotReactNative-tvOSTests.a */; };
 		40BCF7B123AA7C8000E943D1 /* ActivityStarter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40BCF7B023AA7C8000E943D1 /* ActivityStarter.swift */; };
 		40BCF7B323AA7CE800E943D1 /* ActivityStarter.m in Sources */ = {isa = PBXBuildFile; fileRef = 40BCF7B223AA7CE800E943D1 /* ActivityStarter.m */; };
+		40F0A0C623BA2A360066F46C /* DocumentCaptureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40F0A0C523BA2A360066F46C /* DocumentCaptureViewController.swift */; };
 		4BA960D90BA8C0DEDE77D94A /* libPods-DotReactNative.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C6B8B3CE92A43EC27A750B1 /* libPods-DotReactNative.a */; };
 		653D1E34A8184F419366E4E5 /* libPods-DotReactNative-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C88F1963B9EBB4FEA3E6FF7 /* libPods-DotReactNative-tvOS.a */; };
 		F75F0FA003D70ABF4CD56118 /* libPods-DotReactNativeTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 45705F545D594D4D9CCFE908 /* libPods-DotReactNativeTests.a */; };
@@ -62,6 +63,7 @@
 		40BCF7AF23AA7C8000E943D1 /* DotReactNative-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DotReactNative-Bridging-Header.h"; sourceTree = "<group>"; };
 		40BCF7B023AA7C8000E943D1 /* ActivityStarter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityStarter.swift; sourceTree = "<group>"; };
 		40BCF7B223AA7CE800E943D1 /* ActivityStarter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ActivityStarter.m; sourceTree = "<group>"; };
+		40F0A0C523BA2A360066F46C /* DocumentCaptureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DocumentCaptureViewController.swift; path = DotReactNative/DocumentCaptureViewController.swift; sourceTree = "<group>"; };
 		45705F545D594D4D9CCFE908 /* libPods-DotReactNativeTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DotReactNativeTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4823678F4D42633CCDF4F723 /* Pods-DotReactNative-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DotReactNative-tvOS.debug.xcconfig"; path = "Target Support Files/Pods-DotReactNative-tvOS/Pods-DotReactNative-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
 		4B95AEB3A87BD12E92DA4070 /* Pods-DotReactNative-tvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DotReactNative-tvOSTests.debug.xcconfig"; path = "Target Support Files/Pods-DotReactNative-tvOSTests/Pods-DotReactNative-tvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -140,6 +142,7 @@
 				40BCF7B023AA7C8000E943D1 /* ActivityStarter.swift */,
 				40BCF7B223AA7CE800E943D1 /* ActivityStarter.m */,
 				40BCF7AF23AA7C8000E943D1 /* DotReactNative-Bridging-Header.h */,
+				40F0A0C523BA2A360066F46C /* DocumentCaptureViewController.swift */,
 			);
 			name = DotReactNative;
 			sourceTree = "<group>";
@@ -237,6 +240,7 @@
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
 				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
+				680CB54BDD7531F3BAB2E3AD /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -293,13 +297,14 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0940;
-				ORGANIZATIONNAME = Facebook;
+				ORGANIZATIONNAME = Innovatrics;
 				TargetAttributes = {
 					00E356ED1AD99517003FC87E = {
 						CreatedOnToolsVersion = 6.2;
 						TestTargetID = 13B07F861A680F5B00A75B9A;
 					};
 					13B07F861A680F5B00A75B9A = {
+						DevelopmentTeam = R3M2D96PU7;
 						LastSwiftMigration = 1130;
 					};
 					2D02E47A1E0B4A5D006451C7 = {
@@ -315,10 +320,9 @@
 			};
 			buildConfigurationList = 83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "DotReactNative" */;
 			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
-				English,
 				en,
 				Base,
 			);
@@ -442,6 +446,26 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		680CB54BDD7531F3BAB2E3AD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DotReactNative/Pods-DotReactNative-frameworks.sh",
+				"${PODS_ROOT}/dot/DOT.framework",
+				"${PODS_ROOT}/iface/iface.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DOT.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/iface.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DotReactNative/Pods-DotReactNative-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		684A2276C29A02878825AB24 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -542,6 +566,7 @@
 				13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */,
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
 				40BCF7B123AA7C8000E943D1 /* ActivityStarter.swift in Sources */,
+				40F0A0C623BA2A360066F46C /* DocumentCaptureViewController.swift in Sources */,
 				40BCF7B323AA7CE800E943D1 /* ActivityStarter.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -644,14 +669,16 @@
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = NO;
+				DEVELOPMENT_TEAM = R3M2D96PU7;
 				INFOPLIST_FILE = DotReactNative/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.innovatrics.reactnative;
 				PRODUCT_NAME = DotReactNative;
 				SWIFT_OBJC_BRIDGING_HEADER = "DotReactNative-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -667,14 +694,16 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = R3M2D96PU7;
 				INFOPLIST_FILE = DotReactNative/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.innovatrics.reactnative;
 				PRODUCT_NAME = DotReactNative;
 				SWIFT_OBJC_BRIDGING_HEADER = "DotReactNative-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
@@ -706,7 +735,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
 				TARGETED_DEVICE_FAMILY = 3;
-				TVOS_DEPLOYMENT_TARGET = 9.2;
+				TVOS_DEPLOYMENT_TARGET = 10.0;
 			};
 			name = Debug;
 		};
@@ -734,7 +763,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
 				TARGETED_DEVICE_FAMILY = 3;
-				TVOS_DEPLOYMENT_TARGET = 9.2;
+				TVOS_DEPLOYMENT_TARGET = 10.0;
 			};
 			name = Release;
 		};

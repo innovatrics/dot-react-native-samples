@@ -30,10 +30,11 @@ export default class ActivityDemoComponent extends Component {
       // reject when there was an error
       activityStarter
         .initDot()
-        .then(() => {
+        .then(id => {
           this.setState({
             isInitialized: true,
           });
+          alert(id);
         })
         .catch(() => {
           this.setState({
@@ -67,7 +68,6 @@ export default class ActivityDemoComponent extends Component {
               activityStarter
                 .startDocumentCaptureActivity()
                 .then(res => {
-                  alert(res);
                   this.setState({ url: res });
                 })
                 .catch(err => alert(err));
@@ -93,7 +93,7 @@ export default class ActivityDemoComponent extends Component {
           <View style={styles.instructions}>
             <Image
               source={{
-                uri: this.state.url,
+                uri: `data:image/png;base64,${this.state.url}`,
               }}
               style={{
                 width: 400,

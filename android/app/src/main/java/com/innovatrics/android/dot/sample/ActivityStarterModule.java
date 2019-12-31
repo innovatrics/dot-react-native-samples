@@ -1,8 +1,13 @@
 package com.innovatrics.android.dot.sample;
 
 import android.app.Activity;
+import android.content.ContentResolver;
 import android.content.Intent;
+import android.graphics.Bitmap;
+import android.graphics.ImageDecoder;
 import android.net.Uri;
+import android.provider.MediaStore;
+import android.util.Base64;
 
 import com.facebook.react.bridge.ActivityEventListener;
 import com.facebook.react.bridge.Arguments;
@@ -20,6 +25,10 @@ import com.innovatrics.android.dot.sample.activity.DocumentCaptureActivity;
 import com.innovatrics.android.dot.sample.activity.LivenessCheck2Activity;
 import com.innovatrics.android.dot.utils.LicenseUtils;
 
+import java.io.ByteArrayOutputStream;
+import java.io.IOException;
+import java.net.HttpURLConnection;
+import java.net.URL;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -121,7 +130,22 @@ final class ActivityStarterModule extends ReactContextBaseJavaModule {
         case REQUEST_DOCUMENT_CAPTURE:
           if (resultCode == DocumentCaptureActivity.RESULT_SUCCESS) {
             Uri photoUri = intent.getData();
-            mPickerPromise.resolve(photoUri.toString());
+            if (photoUri != null) {
+              ImageDecoder.Source source = ImageDecoder.createSource(getReactApplicationContext().getContentResolver(), photoUri);
+              try {
+                Bitmap bitmap = ImageDecoder.decodeBitmap(source);
+                ByteArrayOutputStream outputStream = new ByteArrayOutputStream();
+                bitmap.compress(Bitmap.CompressFormat.PNG, 100, outputStream);
+                byte[] byteArray = outputStream.toByteArray();
+
+                String encodedString = Base64.encodeToString(byteArray, Base64.DEFAULT);
+                mPickerPromise.resolve(encodedString);
+              } catch (IOException exception) {
+                mPickerPromise.reject(exception);
+              }
+            } else {
+              mPickerPromise.reject(new Error("no image found!"));
+            }
           } else {
             mPickerPromise.reject(new Error(Integer.toString(resultCode)));
           }
