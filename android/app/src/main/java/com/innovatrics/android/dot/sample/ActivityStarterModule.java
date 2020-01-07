@@ -1,10 +1,8 @@
 package com.innovatrics.android.dot.sample;
 
 import android.app.Activity;
-import android.content.ContentResolver;
 import android.content.Intent;
 import android.graphics.Bitmap;
-import android.graphics.ImageDecoder;
 import android.net.Uri;
 import android.provider.MediaStore;
 import android.util.Base64;
@@ -27,8 +25,6 @@ import com.innovatrics.android.dot.utils.LicenseUtils;
 
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
-import java.net.HttpURLConnection;
-import java.net.URL;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -120,6 +116,20 @@ final class ActivityStarterModule extends ReactContextBaseJavaModule {
     return list;
   }
 
+  private String getBase64fromUri(Uri imageUri) {
+    try {
+      Bitmap bitmap = MediaStore.Images.Media.getBitmap(getReactApplicationContext().getContentResolver(), imageUri);
+      ByteArrayOutputStream outputStream = new ByteArrayOutputStream();
+      bitmap.compress(Bitmap.CompressFormat.PNG, 100, outputStream);
+      byte[] byteArray = outputStream.toByteArray();
+
+      String encodedString = Base64.encodeToString(byteArray, Base64.DEFAULT);
+      return encodedString;
+    } catch (IOException e) {
+      return null;
+    }
+  }
+
   // we use `BaseActivityEventListener` to asynchronously get data from `activity.startActivityForResult`
   // see https://facebook.github.io/react-native/docs/native-modules-android#promises
   private final ActivityEventListener mActivityEventListener = new BaseActivityEventListener() {
@@ -131,17 +141,11 @@ final class ActivityStarterModule extends ReactContextBaseJavaModule {
           if (resultCode == DocumentCaptureActivity.RESULT_SUCCESS) {
             Uri photoUri = intent.getData();
             if (photoUri != null) {
-              ImageDecoder.Source source = ImageDecoder.createSource(getReactApplicationContext().getContentResolver(), photoUri);
-              try {
-                Bitmap bitmap = ImageDecoder.decodeBitmap(source);
-                ByteArrayOutputStream outputStream = new ByteArrayOutputStream();
-                bitmap.compress(Bitmap.CompressFormat.PNG, 100, outputStream);
-                byte[] byteArray = outputStream.toByteArray();
-
-                String encodedString = Base64.encodeToString(byteArray, Base64.DEFAULT);
+              String encodedString = getBase64fromUri(photoUri);
+              if (encodedString != null) {
                 mPickerPromise.resolve(encodedString);
-              } catch (IOException exception) {
-                mPickerPromise.reject(exception);
+              } else {
+                mPickerPromise.reject(new Error("no image found!"));
               }
             } else {
               mPickerPromise.reject(new Error("no image found!"));
@@ -154,11 +158,17 @@ final class ActivityStarterModule extends ReactContextBaseJavaModule {
           if (resultCode == LivenessCheck2Activity.RESULT_DONE) {
             Uri photoUri = intent.getData();
             float score = intent.getFloatExtra(LivenessCheck2Activity.OUT_SCORE, 0);
-            // `WritableMap` is translated into javascript object
-            WritableMap map = Arguments.createMap();
-            map.putString("photoUri", photoUri.toString());
-            map.putDouble("score", score);
-            mPickerPromise.resolve(map);
+            if (photoUri != null) {
+              String encodedString = getBase64fromUri(photoUri);
+              if (encodedString != null) {
+                WritableMap map = Arguments.createMap();
+                map.putString("photoUri", encodedString);
+                map.putDouble("score", score);
+                mPickerPromise.resolve(map);
+              } else {
+                mPickerPromise.reject(new Error("no image found!"));
+              }
+            }
           } else {
             mPickerPromise.reject(new Error(Integer.toString(resultCode)));
           }

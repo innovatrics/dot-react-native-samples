@@ -19,6 +19,7 @@
 		3E86C13661BF9D47B0BE18D6 /* libPods-DotReactNative-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D1F39D4393DAA308D102FF2 /* libPods-DotReactNative-tvOSTests.a */; };
 		40BCF7B123AA7C8000E943D1 /* ActivityStarter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40BCF7B023AA7C8000E943D1 /* ActivityStarter.swift */; };
 		40BCF7B323AA7CE800E943D1 /* ActivityStarter.m in Sources */ = {isa = PBXBuildFile; fileRef = 40BCF7B223AA7CE800E943D1 /* ActivityStarter.m */; };
+		40C058EA23C48E6D00840119 /* iengine.lic in Resources */ = {isa = PBXBuildFile; fileRef = 40C058E923C48E6D00840119 /* iengine.lic */; };
 		40F0A0C623BA2A360066F46C /* DocumentCaptureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40F0A0C523BA2A360066F46C /* DocumentCaptureViewController.swift */; };
 		4BA960D90BA8C0DEDE77D94A /* libPods-DotReactNative.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C6B8B3CE92A43EC27A750B1 /* libPods-DotReactNative.a */; };
 		653D1E34A8184F419366E4E5 /* libPods-DotReactNative-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C88F1963B9EBB4FEA3E6FF7 /* libPods-DotReactNative-tvOS.a */; };
@@ -63,6 +64,7 @@
 		40BCF7AF23AA7C8000E943D1 /* DotReactNative-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DotReactNative-Bridging-Header.h"; sourceTree = "<group>"; };
 		40BCF7B023AA7C8000E943D1 /* ActivityStarter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityStarter.swift; sourceTree = "<group>"; };
 		40BCF7B223AA7CE800E943D1 /* ActivityStarter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ActivityStarter.m; sourceTree = "<group>"; };
+		40C058E923C48E6D00840119 /* iengine.lic */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = iengine.lic; sourceTree = "<group>"; };
 		40F0A0C523BA2A360066F46C /* DocumentCaptureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DocumentCaptureViewController.swift; path = DotReactNative/DocumentCaptureViewController.swift; sourceTree = "<group>"; };
 		45705F545D594D4D9CCFE908 /* libPods-DotReactNativeTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DotReactNativeTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4823678F4D42633CCDF4F723 /* Pods-DotReactNative-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DotReactNative-tvOS.debug.xcconfig"; path = "Target Support Files/Pods-DotReactNative-tvOS/Pods-DotReactNative-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
@@ -132,6 +134,7 @@
 		13B07FAE1A68108700A75B9A /* DotReactNative */ = {
 			isa = PBXGroup;
 			children = (
+				40C058E923C48E6D00840119 /* iengine.lic */,
 				008F07F21AC5B25A0029DE68 /* main.jsbundle */,
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
 				13B07FB01A68108700A75B9A /* AppDelegate.m */,
@@ -351,6 +354,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				40C058EA23C48E6D00840119 /* iengine.lic in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */,
 			);

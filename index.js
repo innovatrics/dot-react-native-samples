@@ -1,3 +1,4 @@
+/* eslint-disable no-alert */
 /**
  * Sample React Native App
  * https://github.com/facebook/react-native
@@ -34,7 +35,6 @@ export default class ActivityDemoComponent extends Component {
           this.setState({
             isInitialized: true,
           });
-          alert(id);
         })
         .catch(() => {
           this.setState({
@@ -47,17 +47,12 @@ export default class ActivityDemoComponent extends Component {
   render() {
     return (
       <View style={styles.container}>
-        <Text style={styles.welcome}>
-          Welcome to React Native ({this.props.buildType})!
+        <Text style={styles.welcome}>Welcome to React Native!</Text>
+        <Text style={styles.instructions}>
+          <Text>This is a demo of DOT for Android/iOS in React Native.</Text>
         </Text>
         <Text style={styles.instructions}>
-          <Text>To get started, edit </Text>
-          <Text style={styles.bold}>index.js</Text>
-          <Text>.</Text>
-        </Text>
-        <Text style={styles.instructions}>
-          Double tap R on your keyboard to reload,{'\n'}
-          Shake or press menu button for dev menu
+          Clicking on buttons below will call DOT kit native code.
         </Text>
         <View style={styles.buttonContainer}>
           <Button
@@ -70,7 +65,7 @@ export default class ActivityDemoComponent extends Component {
                 .then(res => {
                   this.setState({ url: res });
                 })
-                .catch(err => alert(err));
+                .catch(e => alert(e));
             }}
             title="Document capture activity"
           />
@@ -82,9 +77,9 @@ export default class ActivityDemoComponent extends Component {
               activityStarter
                 .startLivenessCheckActivity()
                 .then(res => {
-                  alert(JSON.stringify(res, null, 2));
+                  alert(`Liveness score: ${res.score}`);
                 })
-                .catch(err => alert(err));
+                .catch(e => alert(e));
             }}
             title="Liveness check activity"
           />
@@ -95,6 +90,7 @@ export default class ActivityDemoComponent extends Component {
               source={{
                 uri: `data:image/png;base64,${this.state.url}`,
               }}
+              // eslint-disable-next-line react-native/no-inline-styles
               style={{
                 width: 400,
                 height: 300,

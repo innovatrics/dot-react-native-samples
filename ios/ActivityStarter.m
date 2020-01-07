@@ -12,4 +12,5 @@
 @interface RCT_EXTERN_MODULE(ActivityStarter, NSObject)
 RCT_EXTERN_METHOD(initDot:(RCTPromiseResolveBlock)resolve rejecter:(RCTPromiseRejectBlock)reject)
 RCT_EXTERN_METHOD(startDocumentCaptureActivity:(RCTPromiseResolveBlock)resolve rejecter:(RCTPromiseRejectBlock)reject)
+RCT_EXTERN_METHOD(startLivenessCheckActivity:(RCTPromiseResolveBlock)resolve rejecter:(RCTPromiseRejectBlock)reject)
 @end
