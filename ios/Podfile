@@ -1,0 +1,38 @@
+require_relative '../node_modules/react-native/scripts/react_native_pods'
+require_relative '../node_modules/@react-native-community/cli-platform-ios/native_modules'
+
+source 'https://cdn.cocoapods.org/'
+source 'https://github.com/innovatrics/innovatrics-podspecs'
+
+platform :ios, '11.0'
+
+target 'dot_react_native_sample' do
+  config = use_native_modules!
+
+  use_react_native!(
+    :path => config[:reactNativePath],
+    # to enable hermes on iOS, change `false` to `true` and then install pods
+    :hermes_enabled => false
+  )
+
+  pod 'dot-face-eye-gaze-liveness', '4.7.0'
+  pod 'dot-face-detection-fast', '4.7.0'
+  pod 'dot-face-passive-liveness', '4.7.0'
+  pod 'dot-document', '3.3.4'
+
+  target 'dot_react_native_sampleTests' do
+    inherit! :complete
+    # Pods for testing
+  end
+
+  # Enables Flipper.
+  #
+  # Note that if you have use_frameworks! enabled, Flipper will not work and
+  # you should disable the next line.
+  use_flipper!()
+
+  post_install do |installer|
+    react_native_post_install(installer)
+    __apply_Xcode_12_5_M1_post_install_workaround(installer)
+  end
+end

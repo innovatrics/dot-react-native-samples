@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:drawable="@drawable/bg_stroke_2dp_error_radius_4dp" />
+
+    <item
+        android:bottom="2dp"
+        android:drawable="@drawable/bg_stroke_1dp_white_radius_4dp"
+        android:left="2dp"
+        android:right="2dp"
+        android:top="2dp" />
+
+</layer-list>
