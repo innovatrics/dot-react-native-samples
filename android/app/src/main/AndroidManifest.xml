@@ -1,9 +1,6 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
           package="com.innovatrics.android.dot.sample">
 
-    <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
-    <uses-permission android:name="android.permission.CAMERA" />
     <application
             android:name=".MainApplication"
             android:label="@string/app_name"
@@ -23,36 +20,13 @@
             </intent-filter>
         </activity>
         <activity android:name="com.facebook.react.devsupport.DevSettingsActivity" />
-        <activity android:name=".activity.DemoActivity"
-                  android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
 
         <activity android:name=".activity.FaceCaptureActivity" />
-
-        <activity android:name=".activity.InstructedFaceCaptureActivity" />
-
-        <activity android:name=".activity.FaceCaptureSimpleActivity" />
-
-        <activity android:name=".activity.FaceDetectorActivity" />
-
-        <activity android:name=".activity.VerificationActivity" />
-
-        <activity android:name=".activity.LivenessCheckActivity" />
 
         <activity android:name=".activity.EyeGazeLivenessCheckActivity" />
 
         <activity android:name=".activity.DocumentCaptureActivity" />
 
-        <activity android:name=".activity.DocumentReviewActivity" />
-
-        <activity android:name=".activity.OnboardingActivity" />
-
-        <activity android:name=".activity.SignInActivity" />
     </application>
 
 </manifest>

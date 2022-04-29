@@ -3,25 +3,31 @@ package com.innovatrics.android.dot.sample.utils;
 import android.content.Context;
 import android.graphics.Bitmap;
 import android.net.Uri;
-import com.innovatrics.android.dot.sample.documentcapture.Rect;
+
+import com.innovatrics.android.commons.geometry.RectangleInt;
 import com.innovatrics.android.dot.sample.http.dto.Roi;
 
-import java.io.*;
+import java.io.ByteArrayOutputStream;
+import java.io.File;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.OutputStream;
 
 public class Utils {
 
     /**
-     * Convert {@link Roi} to {@link Rect}.
+     * Convert {@link Roi} to {@link RectangleInt}.
      *
      * @param roi {@link Roi}.
-     * @return {@link Rect}.
+     * @return {@link RectangleInt}.
      */
-    public static Rect toRect(final Roi roi) {
+    public static RectangleInt toRect(final Roi roi) {
         if (roi == null) {
             return null;
         }
 
-        return new Rect(
+        return RectangleInt.of(
                 roi.getX(),
                 roi.getY(),
                 roi.getX() + roi.getWidth(),
