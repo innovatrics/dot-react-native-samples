@@ -27,9 +27,9 @@ class SmileLivenessViewModel : ViewModel() {
         viewModelScope.launch {
             withContext(Dispatchers.IO) {
                 val bitmap = BitmapFactory.create(smileLivenessResult.bgrRawImage)
-                val tempFile = File.createTempFile("smile_liveness", ".png")
+                val tempFile = File.createTempFile("smile_liveness", ".jpeg")
                 FileOutputStream(tempFile).use {
-                    bitmap.compress(Bitmap.CompressFormat.PNG, 100, it)
+                    bitmap.compress(Bitmap.CompressFormat.JPEG, 90, it)
                 }
 
                 _result.value = DotSdkResult(

@@ -27,9 +27,9 @@ class FaceAutoCaptureViewModel : ViewModel() {
         viewModelScope.launch {
             withContext(Dispatchers.IO) {
                 val bitmap = BitmapFactory.create(faceAutoCaptureResult.bgrRawImage)
-                val tempFile = File.createTempFile("face_auto_capture", ".png")
+                val tempFile = File.createTempFile("face_auto_capture", ".jpeg")
                 FileOutputStream(tempFile).use {
-                    bitmap.compress(Bitmap.CompressFormat.PNG, 100, it)
+                    bitmap.compress(Bitmap.CompressFormat.JPEG, 90, it)
                 }
 
                 _result.value = DotSdkResult(

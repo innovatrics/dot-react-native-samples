@@ -33,9 +33,9 @@ class DocumentAutoCaptureViewModel : ViewModel() {
         viewModelScope.launch {
             withContext(Dispatchers.IO) {
                 val bitmap = BitmapFactory.create(documentAutoCaptureResult.bgraRawImage)
-                val tempFile = File.createTempFile("document_auto_capture", ".png")
+                val tempFile = File.createTempFile("document_auto_capture", ".jpeg")
                 FileOutputStream(tempFile).use {
-                    bitmap.compress(Bitmap.CompressFormat.PNG, 100, it)
+                    bitmap.compress(Bitmap.CompressFormat.JPEG, 90, it)
                 }
 
                 _result.value = DotSdkResult(

@@ -27,9 +27,9 @@ class MagnifEyeLivenessViewModel : ViewModel() {
         viewModelScope.launch {
             withContext(Dispatchers.IO) {
                 val bitmap = BitmapFactory.create(magnifEyeLivenessResult.bgrRawImage)
-                val tempFile = File.createTempFile("magnifeye_liveness", ".png")
+                val tempFile = File.createTempFile("magnifeye_liveness", ".jpeg")
                 FileOutputStream(tempFile).use {
-                    bitmap.compress(Bitmap.CompressFormat.PNG, 100, it)
+                    bitmap.compress(Bitmap.CompressFormat.JPEG, 90, it)
                 }
 
                 _result.value = DotSdkResult(
