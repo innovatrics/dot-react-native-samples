@@ -1,8 +1,0 @@
-<resources>
-    <!-- Common -->
-    <string name="app_name">DOT Android Kit Sample</string>
-
-    <!-- Document Capture -->
-    <string name="document_capture_photo_captured_dimensions">Photo captured, dimensions %1$dx%2$d</string>
-
-</resources>
