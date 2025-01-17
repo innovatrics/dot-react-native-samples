@@ -12,23 +12,6 @@
 		13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.mm */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
-		2ACB38E01B0D5B64B8C76AAF /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 7F41E187746ADD1F7496B3FF /* PrivacyInfo.xcprivacy */; };
-		3B2958AA2C1B058300351540 /* SmileLivenessViewControllerHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B2958A92C1B058300351540 /* SmileLivenessViewControllerHandler.swift */; };
-		3B2958AD2C1B0B0700351540 /* MagnifEyeLivenessViewControllerHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B2958AC2C1B0B0700351540 /* MagnifEyeLivenessViewControllerHandler.swift */; };
-		3B2958B02C1B4AF000351540 /* NfcReadingHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B2958AF2C1B4AF000351540 /* NfcReadingHandler.swift */; };
-		3B2958B22C1B509000351540 /* NfcReading+Encodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B2958B12C1B509000351540 /* NfcReading+Encodable.swift */; };
-		3B2958B52C1C237600351540 /* master_list.pem in Resources */ = {isa = PBXBuildFile; fileRef = 3B2958B42C1C237600351540 /* master_list.pem */; };
-		3B9682212C19B387005C9AF1 /* DocumentAutoCapture+Encodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B9682202C19B387005C9AF1 /* DocumentAutoCapture+Encodable.swift */; };
-		3B9682232C19D7A1005C9AF1 /* ReactNativePromise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B9682222C19D7A1005C9AF1 /* ReactNativePromise.swift */; };
-		3B9682252C19D7C6005C9AF1 /* ImageWriter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B9682242C19D7C6005C9AF1 /* ImageWriter.swift */; };
-		3B9682282C19E624005C9AF1 /* FaceAutoCaptureViewControllerHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B9682272C19E624005C9AF1 /* FaceAutoCaptureViewControllerHandler.swift */; };
-		3B96822A2C19E69C005C9AF1 /* FaceAutoCapture+Encodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B9682292C19E69C005C9AF1 /* FaceAutoCapture+Encodable.swift */; };
-		3B96822C2C19E7E6005C9AF1 /* FaceAutoCaptureSampleResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B96822B2C19E7E6005C9AF1 /* FaceAutoCaptureSampleResult.swift */; };
-		3BDA08AB2C12D58700987960 /* DotSdkReactModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BDA08AA2C12D58700987960 /* DotSdkReactModule.swift */; };
-		3BDA08AE2C12E4D900987960 /* DotSdkReactModuleBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BDA08AC2C12D65D00987960 /* DotSdkReactModuleBridge.m */; };
-		3BDA08B22C12F6ED00987960 /* dot_license.lic in Resources */ = {isa = PBXBuildFile; fileRef = 3BDA08B12C12F6ED00987960 /* dot_license.lic */; };
-		3BDA08B62C131F9500987960 /* DocumentAutoCaptureViewControllerHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BDA08B52C131F9500987960 /* DocumentAutoCaptureViewControllerHandler.swift */; };
-		3BDA08BC2C133B1C00987960 /* ViewControllerHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BDA08BB2C133B1C00987960 /* ViewControllerHandler.swift */; };
 		7699B88040F8A987B510C191 /* libPods-DotReactNativeSamples-DotReactNativeSamplesTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19F6CBCC0A4E27FBF8BF4A61 /* libPods-DotReactNativeSamples-DotReactNativeSamplesTests.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
@@ -54,29 +37,10 @@
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = DotReactNativeSamples/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = DotReactNativeSamples/main.m; sourceTree = "<group>"; };
 		19F6CBCC0A4E27FBF8BF4A61 /* libPods-DotReactNativeSamples-DotReactNativeSamplesTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DotReactNativeSamples-DotReactNativeSamplesTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		3B2958A92C1B058300351540 /* SmileLivenessViewControllerHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmileLivenessViewControllerHandler.swift; sourceTree = "<group>"; };
-		3B2958AC2C1B0B0700351540 /* MagnifEyeLivenessViewControllerHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagnifEyeLivenessViewControllerHandler.swift; sourceTree = "<group>"; };
-		3B2958AF2C1B4AF000351540 /* NfcReadingHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NfcReadingHandler.swift; sourceTree = "<group>"; };
-		3B2958B12C1B509000351540 /* NfcReading+Encodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NfcReading+Encodable.swift"; sourceTree = "<group>"; };
-		3B2958B32C1B521D00351540 /* DotReactNativeSamples.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = DotReactNativeSamples.entitlements; path = DotReactNativeSamples/DotReactNativeSamples.entitlements; sourceTree = "<group>"; };
-		3B2958B42C1C237600351540 /* master_list.pem */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = master_list.pem; sourceTree = "<group>"; };
 		3B4392A12AC88292D35C810B /* Pods-DotReactNativeSamples.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DotReactNativeSamples.debug.xcconfig"; path = "Target Support Files/Pods-DotReactNativeSamples/Pods-DotReactNativeSamples.debug.xcconfig"; sourceTree = "<group>"; };
-		3B9682202C19B387005C9AF1 /* DocumentAutoCapture+Encodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DocumentAutoCapture+Encodable.swift"; sourceTree = "<group>"; };
-		3B9682222C19D7A1005C9AF1 /* ReactNativePromise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReactNativePromise.swift; sourceTree = "<group>"; };
-		3B9682242C19D7C6005C9AF1 /* ImageWriter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageWriter.swift; sourceTree = "<group>"; };
-		3B9682272C19E624005C9AF1 /* FaceAutoCaptureViewControllerHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceAutoCaptureViewControllerHandler.swift; sourceTree = "<group>"; };
-		3B9682292C19E69C005C9AF1 /* FaceAutoCapture+Encodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FaceAutoCapture+Encodable.swift"; sourceTree = "<group>"; };
-		3B96822B2C19E7E6005C9AF1 /* FaceAutoCaptureSampleResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceAutoCaptureSampleResult.swift; sourceTree = "<group>"; };
-		3BDA08A92C12D58600987960 /* DotReactNativeSamples-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DotReactNativeSamples-Bridging-Header.h"; sourceTree = "<group>"; };
-		3BDA08AA2C12D58700987960 /* DotSdkReactModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DotSdkReactModule.swift; sourceTree = "<group>"; };
-		3BDA08AC2C12D65D00987960 /* DotSdkReactModuleBridge.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DotSdkReactModuleBridge.m; sourceTree = "<group>"; };
-		3BDA08B12C12F6ED00987960 /* dot_license.lic */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = dot_license.lic; sourceTree = "<group>"; };
-		3BDA08B52C131F9500987960 /* DocumentAutoCaptureViewControllerHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentAutoCaptureViewControllerHandler.swift; sourceTree = "<group>"; };
-		3BDA08BB2C133B1C00987960 /* ViewControllerHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerHandler.swift; sourceTree = "<group>"; };
 		5709B34CF0A7D63546082F79 /* Pods-DotReactNativeSamples.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DotReactNativeSamples.release.xcconfig"; path = "Target Support Files/Pods-DotReactNativeSamples/Pods-DotReactNativeSamples.release.xcconfig"; sourceTree = "<group>"; };
 		5B7EB9410499542E8C5724F5 /* Pods-DotReactNativeSamples-DotReactNativeSamplesTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DotReactNativeSamples-DotReactNativeSamplesTests.debug.xcconfig"; path = "Target Support Files/Pods-DotReactNativeSamples-DotReactNativeSamplesTests/Pods-DotReactNativeSamples-DotReactNativeSamplesTests.debug.xcconfig"; sourceTree = "<group>"; };
 		5DCACB8F33CDC322A6C60F78 /* libPods-DotReactNativeSamples.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DotReactNativeSamples.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		7F41E187746ADD1F7496B3FF /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xml; name = PrivacyInfo.xcprivacy; path = DotReactNativeSamples/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = DotReactNativeSamples/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		89C6BE57DB24E9ADA2F236DE /* Pods-DotReactNativeSamples-DotReactNativeSamplesTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DotReactNativeSamples-DotReactNativeSamplesTests.release.xcconfig"; path = "Target Support Files/Pods-DotReactNativeSamples-DotReactNativeSamplesTests/Pods-DotReactNativeSamples-DotReactNativeSamplesTests.release.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
@@ -122,19 +86,12 @@
 		13B07FAE1A68108700A75B9A /* DotReactNativeSamples */ = {
 			isa = PBXGroup;
 			children = (
-				3B2958B32C1B521D00351540 /* DotReactNativeSamples.entitlements */,
-				3B96821E2C19B299005C9AF1 /* Samples */,
-				3BDA08B02C12F6C300987960 /* Assets */,
-				13B07FB61A68108700A75B9A /* Info.plist */,
+				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
+				13B07FB01A68108700A75B9A /* AppDelegate.mm */,
 				13B07FB51A68108700A75B9A /* Images.xcassets */,
-				7F41E187746ADD1F7496B3FF /* PrivacyInfo.xcprivacy */,
+				13B07FB61A68108700A75B9A /* Info.plist */,
 				81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */,
 				13B07FB71A68108700A75B9A /* main.m */,
-				3BDA08AC2C12D65D00987960 /* DotSdkReactModuleBridge.m */,
-				13B07FB01A68108700A75B9A /* AppDelegate.mm */,
-				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
-				3BDA08A92C12D58600987960 /* DotReactNativeSamples-Bridging-Header.h */,
-				3BDA08AA2C12D58700987960 /* DotSdkReactModule.swift */,
 			);
 			name = DotReactNativeSamples;
 			sourceTree = "<group>";
@@ -147,74 +104,6 @@
 				19F6CBCC0A4E27FBF8BF4A61 /* libPods-DotReactNativeSamples-DotReactNativeSamplesTests.a */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		3B2958A82C1B055300351540 /* SmileLiveness */ = {
-			isa = PBXGroup;
-			children = (
-				3B2958A92C1B058300351540 /* SmileLivenessViewControllerHandler.swift */,
-			);
-			path = SmileLiveness;
-			sourceTree = "<group>";
-		};
-		3B2958AB2C1B0AE700351540 /* MagnifEyeLiveness */ = {
-			isa = PBXGroup;
-			children = (
-				3B2958AC2C1B0B0700351540 /* MagnifEyeLivenessViewControllerHandler.swift */,
-			);
-			path = MagnifEyeLiveness;
-			sourceTree = "<group>";
-		};
-		3B2958AE2C1B4ADB00351540 /* NfcReading */ = {
-			isa = PBXGroup;
-			children = (
-				3B2958AF2C1B4AF000351540 /* NfcReadingHandler.swift */,
-				3B2958B12C1B509000351540 /* NfcReading+Encodable.swift */,
-			);
-			path = NfcReading;
-			sourceTree = "<group>";
-		};
-		3B96821E2C19B299005C9AF1 /* Samples */ = {
-			isa = PBXGroup;
-			children = (
-				3B9682222C19D7A1005C9AF1 /* ReactNativePromise.swift */,
-				3B9682242C19D7C6005C9AF1 /* ImageWriter.swift */,
-				3BDA08BB2C133B1C00987960 /* ViewControllerHandler.swift */,
-				3B96821F2C19B2DB005C9AF1 /* DocumentAutoCapture */,
-				3B2958AE2C1B4ADB00351540 /* NfcReading */,
-				3B9682262C19E5FA005C9AF1 /* FaceAutoCapture */,
-				3B2958A82C1B055300351540 /* SmileLiveness */,
-				3B2958AB2C1B0AE700351540 /* MagnifEyeLiveness */,
-			);
-			path = Samples;
-			sourceTree = "<group>";
-		};
-		3B96821F2C19B2DB005C9AF1 /* DocumentAutoCapture */ = {
-			isa = PBXGroup;
-			children = (
-				3BDA08B52C131F9500987960 /* DocumentAutoCaptureViewControllerHandler.swift */,
-				3B9682202C19B387005C9AF1 /* DocumentAutoCapture+Encodable.swift */,
-			);
-			path = DocumentAutoCapture;
-			sourceTree = "<group>";
-		};
-		3B9682262C19E5FA005C9AF1 /* FaceAutoCapture */ = {
-			isa = PBXGroup;
-			children = (
-				3B9682272C19E624005C9AF1 /* FaceAutoCaptureViewControllerHandler.swift */,
-				3B9682292C19E69C005C9AF1 /* FaceAutoCapture+Encodable.swift */,
-				3B96822B2C19E7E6005C9AF1 /* FaceAutoCaptureSampleResult.swift */,
-			);
-			path = FaceAutoCapture;
-			sourceTree = "<group>";
-		};
-		3BDA08B02C12F6C300987960 /* Assets */ = {
-			isa = PBXGroup;
-			children = (
-				3B2958B42C1C237600351540 /* master_list.pem */,
-				3BDA08B12C12F6ED00987960 /* dot_license.lic */,
-			);
-			path = Assets;
 			sourceTree = "<group>";
 		};
 		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
@@ -288,6 +177,7 @@
 			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "DotReactNativeSamples" */;
 			buildPhases = (
 				C38B50BA6285516D6DCD4F65 /* [CP] Check Pods Manifest.lock */,
+				FD10A7F022414F080027D42C /* Start Packager */,
 				13B07F871A680F5B00A75B9A /* Sources */,
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
 				13B07F8E1A680F5B00A75B9A /* Resources */,
@@ -317,7 +207,7 @@
 						TestTargetID = 13B07F861A680F5B00A75B9A;
 					};
 					13B07F861A680F5B00A75B9A = {
-						LastSwiftMigration = 1510;
+						LastSwiftMigration = 1120;
 					};
 				};
 			};
@@ -354,9 +244,6 @@
 			files = (
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
-				3B2958B52C1C237600351540 /* master_list.pem in Resources */,
-				3BDA08B22C12F6ED00987960 /* dot_license.lic in Resources */,
-				2ACB38E01B0D5B64B8C76AAF /* PrivacyInfo.xcprivacy in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -377,7 +264,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "set -e\n\nWITH_ENVIRONMENT=\"$REACT_NATIVE_PATH/scripts/xcode/with-environment.sh\"\nREACT_NATIVE_XCODE=\"$REACT_NATIVE_PATH/scripts/react-native-xcode.sh\"\n\n/bin/sh -c \"$WITH_ENVIRONMENT $REACT_NATIVE_XCODE\"\n";
+			shellScript = "set -e\n\nWITH_ENVIRONMENT=\"../node_modules/react-native/scripts/xcode/with-environment.sh\"\nREACT_NATIVE_XCODE=\"../node_modules/react-native/scripts/react-native-xcode.sh\"\n\n/bin/sh -c \"$WITH_ENVIRONMENT $REACT_NATIVE_XCODE\"\n";
 		};
 		00EEFC60759A1932668264C0 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -491,6 +378,25 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DotReactNativeSamples-DotReactNativeSamplesTests/Pods-DotReactNativeSamples-DotReactNativeSamplesTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		FD10A7F022414F080027D42C /* Start Packager */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Start Packager";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "export RCT_METRO_PORT=\"${RCT_METRO_PORT:=8081}\"\necho \"export RCT_METRO_PORT=${RCT_METRO_PORT}\" > \"${SRCROOT}/../node_modules/react-native/scripts/.packager.env\"\nif [ -z \"${RCT_NO_LAUNCH_PACKAGER+xxx}\" ] ; then\n  if nc -w 5 -z localhost ${RCT_METRO_PORT} ; then\n    if ! curl -s \"http://localhost:${RCT_METRO_PORT}/status\" | grep -q \"packager-status:running\" ; then\n      echo \"Port ${RCT_METRO_PORT} already in use, packager is either not running or not running correctly\"\n      exit 2\n    fi\n  else\n    open \"$SRCROOT/../node_modules/react-native/scripts/launchPackager.command\" || echo \"Can't start packager automatically\"\n  fi\nfi\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -506,22 +412,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3BDA08AB2C12D58700987960 /* DotSdkReactModule.swift in Sources */,
-				3B96822C2C19E7E6005C9AF1 /* FaceAutoCaptureSampleResult.swift in Sources */,
-				3B9682282C19E624005C9AF1 /* FaceAutoCaptureViewControllerHandler.swift in Sources */,
-				3B2958B02C1B4AF000351540 /* NfcReadingHandler.swift in Sources */,
-				3BDA08BC2C133B1C00987960 /* ViewControllerHandler.swift in Sources */,
-				3B9682212C19B387005C9AF1 /* DocumentAutoCapture+Encodable.swift in Sources */,
-				3B2958AA2C1B058300351540 /* SmileLivenessViewControllerHandler.swift in Sources */,
-				3BDA08B62C131F9500987960 /* DocumentAutoCaptureViewControllerHandler.swift in Sources */,
-				3B9682252C19D7C6005C9AF1 /* ImageWriter.swift in Sources */,
-				3B2958AD2C1B0B0700351540 /* MagnifEyeLivenessViewControllerHandler.swift in Sources */,
 				13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */,
-				3B9682232C19D7A1005C9AF1 /* ReactNativePromise.swift in Sources */,
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
-				3B96822A2C19E69C005C9AF1 /* FaceAutoCapture+Encodable.swift in Sources */,
-				3B2958B22C1B509000351540 /* NfcReading+Encodable.swift in Sources */,
-				3BDA08AE2C12E4D900987960 /* DotSdkReactModuleBridge.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -540,17 +432,13 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 5B7EB9410499542E8C5724F5 /* Pods-DotReactNativeSamples-DotReactNativeSamplesTests.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = "";
-				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = 2FC5979W67;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = DotReactNativeSamplesTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -561,10 +449,8 @@
 					"-lc++",
 					"$(inherited)",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.innovatrics.dot.demo;
+				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
-				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "DOT SDK Dev Demo Profile";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DotReactNativeSamples.app/DotReactNativeSamples";
 			};
 			name = Debug;
@@ -573,14 +459,10 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 89C6BE57DB24E9ADA2F236DE /* Pods-DotReactNativeSamples-DotReactNativeSamplesTests.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Manual;
 				COPY_PHASE_STRIP = NO;
-				DEVELOPMENT_TEAM = "";
-				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = 2FC5979W67;
 				INFOPLIST_FILE = DotReactNativeSamplesTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -591,10 +473,8 @@
 					"-lc++",
 					"$(inherited)",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.innovatrics.dot.demo;
+				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
-				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "DOT SDK Dev Demo Profile";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DotReactNativeSamples.app/DotReactNativeSamples";
 			};
 			name = Release;
@@ -605,11 +485,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_ENTITLEMENTS = DotReactNativeSamples/DotReactNativeSamples.entitlements;
-				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = "";
-				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = 2FC5979W67;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = DotReactNativeSamples/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -622,11 +498,8 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.innovatrics.dot.demo;
+				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = DotReactNativeSamples;
-				PROVISIONING_PROFILE_SPECIFIER = "";
-				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "DOT SDK Dev Demo Profile";
-				SWIFT_OBJC_BRIDGING_HEADER = "DotReactNativeSamples-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -639,11 +512,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_ENTITLEMENTS = DotReactNativeSamples/DotReactNativeSamples.entitlements;
-				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = "";
-				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = 2FC5979W67;
 				INFOPLIST_FILE = DotReactNativeSamples/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -655,11 +524,8 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.innovatrics.dot.demo;
+				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = DotReactNativeSamples;
-				PROVISIONING_PROFILE_SPECIFIER = "";
-				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "DOT SDK Dev Demo Profile";
-				SWIFT_OBJC_BRIDGING_HEADER = "DotReactNativeSamples-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
@@ -669,9 +535,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				CC = "";
 				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
-				CLANG_CXX_LANGUAGE_STANDARD = "c++20";
+				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
@@ -697,7 +562,6 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
-				CXX = "";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = "";
@@ -716,9 +580,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
-				LD = "";
-				LDPLUSPLUS = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					/usr/lib/swift,
 					"$(inherited)",
@@ -735,13 +597,8 @@
 					"-DFOLLY_NO_CONFIG",
 					"-DFOLLY_MOBILE=1",
 					"-DFOLLY_USE_LIBCPP=1",
-					"-DFOLLY_CFG_NO_COROUTINES=1",
-					"-DFOLLY_HAVE_CLOCK_GETTIME=1",
 				);
-				OTHER_LDFLAGS = "$(inherited)  ";
-				REACT_NATIVE_PATH = "${PODS_ROOT}/../../node_modules/react-native";
 				SDKROOT = iphoneos;
-				USE_HERMES = true;
 			};
 			name = Debug;
 		};
@@ -749,9 +606,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				CC = "";
 				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
-				CLANG_CXX_LANGUAGE_STANDARD = "c++20";
+				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
@@ -777,7 +633,6 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
-				CXX = "";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = "";
@@ -789,9 +644,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
-				LD = "";
-				LDPLUSPLUS = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					/usr/lib/swift,
 					"$(inherited)",
@@ -807,13 +660,8 @@
 					"-DFOLLY_NO_CONFIG",
 					"-DFOLLY_MOBILE=1",
 					"-DFOLLY_USE_LIBCPP=1",
-					"-DFOLLY_CFG_NO_COROUTINES=1",
-					"-DFOLLY_HAVE_CLOCK_GETTIME=1",
 				);
-				OTHER_LDFLAGS = "$(inherited)  ";
-				REACT_NATIVE_PATH = "${PODS_ROOT}/../../node_modules/react-native";
 				SDKROOT = iphoneos;
-				USE_HERMES = true;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
