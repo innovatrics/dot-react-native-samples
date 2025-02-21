@@ -153,8 +153,7 @@ class DotSdkReactModule(
     )
 
     private fun handleActivityResult(activity: Activity, requestCode: Int, resultCode: Int, data: Intent?) {
-        val promise = activityRequestPromises[requestCode]
-        check(promise != null) { "Promise for result code $resultCode is null" }
+        val promise = activityRequestPromises[requestCode] ?: return
 
         when (requestCode) {
             REQUEST_CODE_DOCUMENT_AUTO_CAPTURE -> {
